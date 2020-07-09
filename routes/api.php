@@ -16,6 +16,7 @@ use Illuminate\Http\Request;
     return $request->user();
 });*/
 
+
 Route::get('products', 'ProductsController@index');
 Route::get('products/{product}', 'ProductsController@show');
 Route::post('products', 'ProductsController@store');
@@ -27,5 +28,4 @@ Route::get('customers/{customer}', 'CustomersController@show');
 Route::post('customers', 'CustomersController@store');
 Route::put('customers/{customer}', 'CustomersController@update');
 Route::delete('customers/{customer}', 'CustomersController@delete');
-
 
